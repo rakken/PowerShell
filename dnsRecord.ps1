@@ -1,4 +1,4 @@
-﻿Get-DnsServerResourceRecord -ComputerName 10.36.8.116 -ZoneName dtc.rccad.net -RRType A | select hostname | Out-File C:\Temp\Server.txt
+﻿Get-DnsServerResourceRecord -ComputerName xx.xx.xx.xx -ZoneName dtc.rccad.net -RRType A | select hostname | Out-File C:\Temp\Server.txt
 Write-Host "Started Pinging..."
 GC C:\Temp\Server.txt | %{
 	If (Test-Connection $_.Trim() -Quiet -Count 2){
