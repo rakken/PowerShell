@@ -1,4 +1,4 @@
-﻿$hostList = Get-DnsServerResourceRecord -ComputerName 10.36.8.116 -ZoneName dtc.rccad.net -RRType A | Select hostname -ExpandProperty hostname
+﻿$hostList = Get-DnsServerResourceRecord -ComputerName xx.xx.xx.xx -ZoneName dtc.rccad.net -RRType A | Select hostname -ExpandProperty hostname
 Write-Host "Started Pinging..."
 
 foreach ($Server in $hostList){
